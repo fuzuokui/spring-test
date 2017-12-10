@@ -3,5 +3,7 @@
        xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="person1,person2" class="com.fuzuokui.spring.model.Person"/>
+    <bean id="" name="person1,person2" class="com.fuzuokui.spring.model.Person"/>
+    <bean id="person1" class="com.fuzuokui.spring.model.Person"/>
+
 </beans>
