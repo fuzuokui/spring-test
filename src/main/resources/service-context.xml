@@ -6,4 +6,10 @@
     <bean id="person" name="person1,person2" class="com.fuzuokui.spring.model.Person"/>
     <!--<bean id="person1" class="com.fuzuokui.spring.model.Person"/>-->
 
+    <!-- lookup-method的使用示例 -->
+    <bean id="teacher" class="com.fuzuokui.spring.lookup.Teacher"/>
+    <bean id="student" class="com.fuzuokui.spring.lookup.Student"/>
+    <bean id="getBeanTest" class="com.fuzuokui.spring.lookup.GetBeanTest">
+        <lookup-method bean="student" name="getUserBean"/>
+    </bean>
 </beans>
