@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- constructor-arg标签的使用 -->
+    <bean id="person" class="com.fuzuokui.spring.constructorarg.Person">
+        <constructor-arg name="name" value="fuzuokui"/>
+        <constructor-arg index="1" value="12"/>
+    </bean>
+</beans>
