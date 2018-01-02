@@ -3,7 +3,7 @@
        xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="" name="" class="com.fuzuokui.spring.model.Person"/>
+    <bean id="person" name="" class="com.fuzuokui.spring.model.Person"/>
     <!--<bean id="person1" class="com.fuzuokui.spring.model.Person"/>-->
 
     <!-- lookup-method的使用示例 -->
@@ -11,5 +11,11 @@
     <bean id="student" class="com.fuzuokui.spring.lookup.Student"/>
     <bean id="getBeanTest" class="com.fuzuokui.spring.lookup.GetBeanTest">
         <lookup-method bean="student" name="getUserBean"/>
+    </bean>
+
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:simplelog.properties</value>
+        </property>
     </bean>
 </beans>
