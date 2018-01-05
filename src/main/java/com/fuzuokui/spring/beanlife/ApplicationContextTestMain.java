@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ApplicationContextTestMain {
 
     public static void main(String[] args) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("aware/aware.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("beanlife/aware.xml");
 //        ac.getBean("user1");
         System.out.println("关闭容器");
         ((ClassPathXmlApplicationContext)ac).close();

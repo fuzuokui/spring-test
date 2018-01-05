@@ -7,7 +7,7 @@ import org.springframework.core.io.ClassPathResource;
 public class BeanFactoryTestMain {
 
     public static void main(String[] args) {
-        ConfigurableBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("aware/aware.xml"));
+        ConfigurableBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("beanlife/aware.xml"));
         beanFactory.addBeanPostProcessor(new MyBeanPostProcessor());
         beanFactory.getBean("user1");
         System.out.println("关闭容器");
