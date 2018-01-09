@@ -1,0 +1,9 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- constructor-arg标签的使用 -->
+    <bean id="dataSource1" class="com.fuzuokui.spring.singleton.DataSource" scope="singleton"/>
+    <!--<bean id="dataSource2" class="com.fuzuokui.spring.singleton.DataSource" scope="singleton"/>-->
+</beans>
