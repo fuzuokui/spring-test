@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" class="com.fuzuokui.spring.autowire.bytype.TestService" autowire="byName">
+    </bean>
+
+    <bean id="testDao" class="com.fuzuokui.spring.autowire.bytype.TestDao"/>
+    <!--<bean id="testDao1" class="com.fuzuokui.spring.autowire.bytype.TestDao"/>-->
+</beans>
